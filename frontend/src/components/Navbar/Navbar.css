@@ -1,0 +1,157 @@
+/* Reset box model & remove default body margin (important) */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;               /* remove default browser margin */
+  padding: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* NAVBAR - fixed at top and full width */
+.navbar {
+  position: fixed;         /* FIXED keeps it on top of viewport always */
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 72px;            /* fixed height (used for content offset) */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 28px;
+  background-color: #0c7b16;
+  color: #fff;
+  z-index: 1100;           /* should be above other content */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+/* Logo */
+.logo a {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1;
+}
+
+/* Nav links group (desktop) */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 0;
+  transition: color .18s ease, transform .12s ease;
+}
+
+.nav-links li a:hover {
+  color: #f0fdf4;
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
+/* Right side controls */
+.nav-right {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.cart-btn,
+.login-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: #0e8b35;
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  transition: background .18s ease, transform .12s ease;
+}
+
+.cart-btn:hover,
+.login-btn:hover {
+  background: #16a34a;
+  transform: translateY(-1px);
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 6px;
+  align-items: center;
+  justify-content: center;
+}
+
+.bar {
+  width: 22px;
+  height: 3px;
+  margin: 3px 0;
+  background: #fff;
+  transition: transform .25s ease, opacity .25s ease;
+}
+
+/* Mobile menu */
+.nav-links-mobile {
+  position: absolute;
+  top: 72px;               /* immediately below the fixed navbar */
+  right: 12px;
+  width: 220px;
+  background: #0c7b16;
+  border-radius: 10px;
+  padding: 14px;
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+
+/* Ensure mobile links align nicely */
+.nav-links-mobile li {
+  text-align: right;
+}
+
+/* Responsive rules */
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+
+  /* when mobile menu is active you can toggle display:block via JS */
+  .nav-links-mobile.show {
+    display: flex;
+  }
+}
+
+/* ---------- Important: prevent content from hiding under fixed navbar ---------- */
+/* Apply this to the main content wrapper in your app (see instructions below) */
+.main-content {
+  padding-top: 72px; /* same as .navbar height */
+}
+
+/* Extra safety: if your layout component uses .container that adds top margin/padding remove it */
+.container, .page-wrapper, .app-wrapper {
+  margin-top: 0;
+  padding-top: 0;
+}

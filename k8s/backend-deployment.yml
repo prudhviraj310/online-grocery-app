@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grocery-backend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: grocery-backend
+  template:
+    metadata:
+      labels:
+        app: grocery-backend
+    spec:
+      containers:
+      - name: backend
+        image: prudhviraj/grocery-backend:latest
+        ports:
+        - containerPort: 5000

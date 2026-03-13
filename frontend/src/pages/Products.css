@@ -1,0 +1,40 @@
+.products-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-right: 0;
+}
+
+.category-section {
+  margin-bottom: 40px;
+}
+
+.category-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color:  rgba(9, 9, 9, 0.825);
+}
+
+/* Horizontal scroll container */
+.category-scroll {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;          /* horizontal scroll */
+  scroll-behavior: smooth;   /* smooth scrolling */
+  padding-bottom: 10px;      /* optional padding */
+}
+
+/* Hide scrollbar (optional, looks cleaner) */
+.category-scroll::-webkit-scrollbar {
+  display: none;
+}
+.category-scroll {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* ProductCard inside scroll */
+.category-scroll > * {
+  flex: 0 0 auto;            /* prevent items from shrinking */
+  width: 200px;               /* fixed width for consistent scroll */
+}

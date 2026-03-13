@@ -1,0 +1,51 @@
+{
+  "vegetables": [
+    { "name": "Beetroot", "image": "/images/vegetables/beetroot.jpg" },
+    { "name": "Potato", "image": "/images/vegetables/potato.jpg" },
+    { "name": "Mushrooms", "image": "/images/vegetables/mashrums.jpg" },
+    { "name": "Carrot", "image": "/images/vegetables/carrot.jpg" },
+    { "name": "Keera", "image": "/images/vegetables/keera.jpg" },
+    { "name": "Brinjal", "image": "/images/vegetables/brinjal.jpg" },
+    { "name": "Onions", "image": "/images/vegetables/onions.jpg" },
+    { "name": "Sweet Potato", "image": "/images/vegetables/sweetpotato.jpg" },
+    { "name": "Garlic", "image": "/images/vegetables/garlic (2).jpg" },
+    { "name": "Red Chilli", "image": "/images/vegetables/redchilli.jpg" },
+    { "name": "Green Chilli", "image": "/images/vegetables/greenchilly.jpg" },
+    { "name": "Sweet Corn", "image": "/images/vegetables/sweetcorn.jpg" },
+    { "name": "Haldi", "image": "/images/vegetables/haldhi.jpg" },
+    { "name": "Daniya", "image": "/images/vegetables/daniya.jpg" },
+    { "name": "Lemon", "image": "/images/vegetables/lemon.jpg" },
+    { "name": "Tomato", "image": "/images/vegetables/tomato.jpg" }
+  ],
+
+  "dairy": [
+    { "name": "Tofu", "image": "/images/dairy/toffu.jpg" },
+    { "name": "Milk", "image": "/images/dairy/millk.jpg" },
+    { "name": "Cheese", "image": "/images/dairy/chees.jpg" },
+    { "name": "Paneer", "image": "/images/dairy/paneer.jpg" },
+    { "name": "Koi Eggs", "image": "/images/dairy/koileggs.jpg" },
+    { "name": "Desi Eggs", "image": "/images/dairy/desieggs.jpg" },
+    { "name": "Duck Eggs", "image": "/images/dairy/duckeggs.jpg" },
+    { "name": "White Eggs", "image": "/images/dairy/whiteeggs.jpg" }
+  ],
+
+  "nuts": [
+    { "name": "Pistachios", "image": "/images/nuts/pistha.jpg" },
+    { "name": "Almonds", "image": "/images/nuts/almonds.jpg" },
+    { "name": "Sunflower Seeds", "image": "/images/nuts/sufluwerseeds.jpg" },
+    { "name": "Chickpeas", "image": "/images/nuts/chickpees.jpg" },
+    { "name": "Palli", "image": "/images/nuts/palli.jpg" },
+    { "name": "Rajma", "image": "/images/nuts/rajma.jpg" },
+    { "name": "Flax Seeds", "image": "/images/nuts/flackseeds.jpg" }
+  ],
+
+  "fruits": [
+    { "name": "Strawberry", "image": "/images/fruits/straberry.jpg" },
+    { "name": "Grapes", "image": "/images/fruits/grapes.jpg" },
+    { "name": "Lemon", "image": "/images/fruits/lemon.jpg" },
+    { "name": "Kiwi", "image": "/images/fruits/kwiwi.jpg" },
+    { "name": "Orange", "image": "/images/fruits/orange.jpg" },
+    { "name": "Mangoes", "image": "/images/fruits/mangos.jpg" },
+    { "name": "Pineapple", "image": "/images/fruits/pinapple.jpg" }
+  ]
+}
